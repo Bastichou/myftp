@@ -1,0 +1,25 @@
+## myFTP-downloader
+#
+#: TODO
+
+
+CORE
+----
+ - Handle FTP arborescence: Allows users to display folders contents (Add FTP remote path to according function and gets path from URI)
+ - Edits the target path
+ - Check if file already exists, continue an older download
+ - Upload ?
+
+FRONT
+----
+ - Downloader progess bar
+ - Cancels a download in progress
+ - config.php > edits FTP configurations
+ - Handle navigation through FTP directories / Improve path management
+ - Displaying table index is out of range
+
+DONE
+----
+ - Basic HTML/CSS design : bootstrap
+ - Downloads files and folder.
+
