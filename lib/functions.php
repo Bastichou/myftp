@@ -64,7 +64,7 @@
 }
 
  function ftp_connection() {
-	$connect = ftp_connect(FTP_SERVER);
+	$connect = ftp_connect(FTP_SERVER,21,10);
 	if($connect == FALSE) {
 		$GLOBALS['return_s'] = 3;
 		$GLOBALS['return_msg'] = 'Unable to connect to the FTP server..';
