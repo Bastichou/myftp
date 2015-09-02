@@ -9,6 +9,7 @@
     <?php if(strcmp(basename($_SERVER['PHP_SELF']),"index.php") == 0) { ?>
       <li class="active"><a href="index.php">Files</a></li>
       <li><a href="dlinprogress.php">DL in progress</a></li>
+      <li><a href="settings.php">Settings</a></li>
     <?php } elseif(strcmp(basename($_SERVER['PHP_SELF']),"dlinprogress.php") == 0) { ?>
       <li><a href="index.php">Files</a></li>
       <li class="active"><a href="dlinprogress.php">DL in progress</a></li>
