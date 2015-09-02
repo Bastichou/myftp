@@ -21,7 +21,7 @@
 
 		<div id="container-fluid">
 			<div class="page-header">
-			 <h3>Downloaded FTP Files : <?php echo LOCAL_PATH;?><h3> 
+			 <h3> Settings<h3> 
 			</div>
 			<div class="container-fluid">
 				TEST CONFIG
