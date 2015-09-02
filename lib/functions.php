@@ -64,10 +64,11 @@
 }
 
  function ftp_connection() {
-	$connect = ftp_connect(FTP_SERVER,21,10);
+	$connect = ftp_connect(FTP_SERVER,21,5);
 	if($connect == FALSE) {
 		$GLOBALS['return_s'] = 3;
 		$GLOBALS['return_msg'] = 'Unable to connect to the FTP server..';
+		header('settings.php');
 	}
 	$login = ftp_login($connect, FTP_USERNAME, FTP_PASSWORD);
 	if(!$login) {
