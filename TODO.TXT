@@ -9,12 +9,13 @@ CORE
  - Edits the target path
  - Check if file already exists, continue an older download
  - Upload ?
+ - Improve the password management (security and stockage) 
 
 FRONT
 ----
  - Downloader progess bar
  - Cancels a download in progress
- - config.php > edits FTP configurations
+ - settings.php > edits FTP configurations
  - Handle navigation through FTP directories / Improve path management
  - Displaying table index is out of range
 
