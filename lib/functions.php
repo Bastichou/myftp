@@ -64,11 +64,10 @@
 }
 
  function ftp_connection() {
-	$connect = ftp_connect(FTP_SERVER,21,5);
+	$connect = ftp_connect(FTP_SERVER);
 	if($connect == FALSE) {
 		$GLOBALS['return_s'] = 3;
 		$GLOBALS['return_msg'] = 'Unable to connect to the FTP server..';
-		header('settings.php');
 	}
 	$login = ftp_login($connect, FTP_USERNAME, FTP_PASSWORD);
 	if(!$login) {
@@ -76,7 +75,11 @@
 		$GLOBALS['return_msg'] = 'Login/Password incorrect..';
 	}
 	//$data = ftp_nlist(ftp_connect(FTP_SERVER),".");
+	if($GLOBALS['return_s'] = 3) {
+		header(settings.php);
+	} else {
 	return $connect;
+	}
  }
 
  function ftp_list_file($path) {
